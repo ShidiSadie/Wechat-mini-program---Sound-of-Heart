@@ -30,17 +30,19 @@ Right now we will show users a questionaire about study, work, life, leisure and
 You can pick the choice of your situation. After finishing all questions, you can click on submit and the page will be back to Homepage.
 
 ## My Page
-Like many social apps, we can see our followings, followers, profile in My Page. For our mini program, the report for the state of mind of the user can also be checked here. Click on the My Page button at the very bottom, My Page will show as (f). By clicking on the first and second button in the second row, you can see your followers and followings.
+Like many social apps, we can see our followings, followers, profile in My Page. For our mini program, the report for the state of mind of the user can also be checked here. Click on the My Page button at the very bottom, My Page will show as (f). Scrolling down, you can see all of your posts (g). By clicking on the first and second button in the second row, you can see your followers and followings (h), (i).
 
 ![个人主页页面](https://user-images.githubusercontent.com/55969849/71501361-f69f8200-281e-11ea-9766-95b480004b4b.PNG)
+![个人主页你](https://user-images.githubusercontent.com/55969849/71501858-ac6bd000-2821-11ea-9cd4-7b2c0b732f97.jpg)
 ![粉丝列表](https://user-images.githubusercontent.com/55969849/71500508-12ecf000-281a-11ea-98cc-195ab88a541f.PNG)
-![关注列表](https://user-images.githubusercontent.com/55969849/71500495-11bbc300-281a-11ea-87b9-2ac7d5cf37eb.PNG)
+
 
                   
                   (f)                                 (g)                                 (h)
-By clikcing on the fifth button, you can also update your settings, like your birthday, profile and privacy (i). By clikcing on the third button, you can see your report, telling your information about your state of mind and some suggestions to relieve your pressure and better face difficulties (j).
+By clikcing on the fifth button, you can also update your settings, like your birthday, profile and privacy (j). By clikcing on the third button, you can see your report, telling your information about your state of mind and some suggestions to relieve your pressure and better face difficulties (k).
 
+![关注列表](https://user-images.githubusercontent.com/55969849/71500495-11bbc300-281a-11ea-87b9-2ac7d5cf37eb.PNG)
 ![个人信息设置页面](https://user-images.githubusercontent.com/55969849/71500491-11bbc300-281a-11ea-8216-cd609f4340f9.PNG)
 ![推送周报](https://user-images.githubusercontent.com/55969849/71500505-12ecf000-281a-11ea-9bac-a98c92c00d6d.PNG)
 
-                  (i)                                 (j)
+                  (i)                                 (j)                                 (k)
