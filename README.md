@@ -28,3 +28,14 @@ Right now we will show users a questionaire about study, work, life, leisure and
 ![问卷](https://user-images.githubusercontent.com/55969849/71500510-13858680-281a-11ea-9abb-44b82652d6ec.jpg)
 
 You can pick the choice of your situation. After finishing all questions, you can click on submit and the page will be back to Homepage.
+
+## My Page
+Like many social apps, we can see our followings, followers, profile in My Page. For our mini program, the report for the state of mind of the user can also be checked here. Click on the My Page button at the very bottom, My Page will show as (f)
+
+![个人主页页面](https://user-images.githubusercontent.com/55969849/71501361-f69f8200-281e-11ea-9766-95b480004b4b.PNG)
+![关注列表](https://user-images.githubusercontent.com/55969849/71500495-11bbc300-281a-11ea-87b9-2ac7d5cf37eb.PNG)
+![粉丝列表](https://user-images.githubusercontent.com/55969849/71500508-12ecf000-281a-11ea-98cc-195ab88a541f.PNG)
+                  
+                  (f)                                 (g)                                 (h)
+![个人信息设置页面](https://user-images.githubusercontent.com/55969849/71500491-11bbc300-281a-11ea-8216-cd609f4340f9.PNG)
+![推送周报](https://user-images.githubusercontent.com/55969849/71500505-12ecf000-281a-11ea-9bac-a98c92c00d6d.PNG)
