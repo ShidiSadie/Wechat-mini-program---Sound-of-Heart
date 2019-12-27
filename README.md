@@ -54,6 +54,8 @@ By clikcing on the fifth button, you can also update your settings, like your bi
  By clikcing on the third button at the very bottom, users will receive notifications for repost, comments and likes on this page.
  
  ![我的消息页面](https://user-images.githubusercontent.com/55969849/71500504-12ecf000-281a-11ea-9137-07c1548bda66.PNG)
- Clicking on a certain bottom, a detailed information will show
+
+Clicking on a certain bottom, a detailed information will show
+
  ![我收到的回复页面](https://user-images.githubusercontent.com/55969849/71500503-12ecf000-281a-11ea-9f29-e2b18315551e.PNG)
  
