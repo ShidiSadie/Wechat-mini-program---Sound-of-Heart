@@ -46,3 +46,13 @@ By clikcing on the fifth button, you can also update your settings, like your bi
 ![推送周报](https://user-images.githubusercontent.com/55969849/71500505-12ecf000-281a-11ea-9bac-a98c92c00d6d.PNG)
 
                   (i)                                 (j)                                 (k)
+ The fourth and the sixth button is reserved for users to deposit and chat with professional psychologists.
+ ## Finding
+ The second button at the very bottom will lead users to moments with similar tags by other users.
+ ![moments](https://user-images.githubusercontent.com/55969849/71502501-5dc03500-2825-11ea-9f27-9c4ed373b76c.jpg)
+ ## Notifications
+ By clikcing on the third button at the very bottom, users will receive notifications for repost, comments and likes on this page.
+ ![我的消息页面](https://user-images.githubusercontent.com/55969849/71500504-12ecf000-281a-11ea-9137-07c1548bda66.PNG)
+ Clicking on a certain bottom, a detailed information will show
+ ![我收到的回复页面](https://user-images.githubusercontent.com/55969849/71500503-12ecf000-281a-11ea-9f29-e2b18315551e.PNG)
+ 
