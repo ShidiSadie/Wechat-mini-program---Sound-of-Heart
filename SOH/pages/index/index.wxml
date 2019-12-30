@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<!--pages/homepage/homepage.wxml-->
+
+<!--index.wxml-->
+<view class='item-list'>
+  <view class='personal'>
+    <view class='pro-title'>我的信息</view>
+     <view class="logo">
+      <open-data type="userAvatarUrl" class="userinfo" id="userinfo">
+      </open-data>
+     </view>
+
+  </view>
+  <view class='mood'>
+    <view class='pro-title'> 心情标签 </view>
+    <scroll-view class='bg' scroll-x='true'>
+     <view class="item {{arry_now[index_s]!=0?'active':''}}" 
+           wx:for="{{array}}" 
+           wx:key="index" 
+           wx:for-index="index_s" 
+           bindtap="click1" 
+           data-idx="{{index}}" 
+           data-idx_s="{{index_s}}">
+       {{item.mag}}
+      </view>
+     </scroll-view>
+         <scroll-view class='bg' scroll-x='true'>
+     <view class="item {{arry_nows[index_s]!=0?'active':''}}" 
+           wx:for="{{arrays}}" 
+           wx:key="index" 
+           wx:for-index="index_s" 
+           bindtap="click2" 
+           data-idx="{{index}}" 
+           data-idx_s="{{index_s}}">
+       {{item.mag}}
+      </view>
+     </scroll-view>
+</view>
+  <view class='sentence'>
+  <view class='pro-title'>每日一句</view>
+<image src="whale.png" bindload="imageLoad"
+style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+</view>
+</view> 

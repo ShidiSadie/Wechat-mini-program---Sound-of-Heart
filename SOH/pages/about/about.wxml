@@ -1,0 +1,6 @@
+<!--pages/index/guanyu.wxml-->
+<image class='image-1' src='/images/ldos.jpg'></image>
+<view class='view-1'>
+  <text class='text-01'>本程序是一个心理社交类的微信小程序，实现使用者对自我生活的管理、对内心状态的探索、以及分享和共享他人分享的状态的功能。
+出发点是对现在生活环境压力造成的心理拖延、消极等负面情绪的缓解，并基于使用人数较多的微信，可以使得本项目的传播度更广。</text>
+</view>

@@ -1,0 +1,112 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wxa1df8ea78f052afd",
+	"projectname": "SOH",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "publish",
+					"pathName": "pages/publish/publish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "welcome",
+					"pathName": "pages/welcome/welcome",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "report",
+					"pathName": "pages/report/report",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "art",
+					"pathName": "pages/art/art",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "study",
+					"pathName": "pages/study/study",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "work",
+					"pathName": "pages/work/work",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pinglun",
+					"pathName": "pages/pinglun/pinglun",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "life",
+					"pathName": "pages/life/life",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "space",
+					"pathName": "pages/space/space",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/setting/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "expert",
+					"pathName": "pages/expert/expert"
+				}
+			]
+		}
+	}
+}

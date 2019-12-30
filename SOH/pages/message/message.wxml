@@ -1,0 +1,7 @@
+<image src="image/zhuanfa.png" style="width:470px;height:50px;border-bottom: 1rpx solid rgba(94, 104, 119, 0.24)"></image>
+<view bindtap="toItem" class="pinglun">
+    <image src="image/pinglun.png" style="width:470px;height:50px;border-bottom: 1rpx solid rgba(94, 104, 119, 0.24)"></image>
+</view>
+<image src="image/zan.png" style="width:470px;height:50px;border-bottom: 1rpx solid rgba(94, 104, 119, 0.24)"></image>
+<image src="image/sixin.png" style="width:470px;height:50px;border-bottom: 1rpx solid rgba(94, 104, 119, 0.24)"></image>
+<view  class="dongtu"><image src="image/ju.gif" style="width:200px;height:200px"></image></view>

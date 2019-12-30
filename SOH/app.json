@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fans/fans",
+    "pages/find/find",
+    "pages/follow/follow",
+    "pages/mine/mine",
+    "pages/publish/publish",
+    "pages/welcome/welcome",
+    "pages/study/study",
+    "pages/work/work",
+    "pages/art/art",
+    "pages/report/report",
+    "pages/message/message",
+    "pages/pinglun/pinglun",
+    "pages/setting/setting",
+    "pages/space/space",
+    "pages/life/life",
+    "pages/about/about",
+    "pages/expert/expert"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#65eef0",
+    "navigationBarTitleText": "心声捕手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#243154",
+    "selectedColor": "#65eef0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_on.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/find_on.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message_on.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_on.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<!--pages/find/find.wxml-->
+<view class='moment'>
+  <text class='momentbar'>猜你喜欢</text>
+  <view class='onemoment' wx:for="{{objectArray}}" wx:for-index="index" wx:for-item="item" bindtap='comment'>
+    <image class="myhead" src="../../images/{{item.uimg}}.jpg" mode="cover"></image>
+    <view class='info'>
+      <view class='name'>{{item.uname}}</view>
+      <view class='time'>{{item.mtime}}</view>
+    </view>
+    <view class='content'>{{item.mcontent}}</view>
+    <view class='tag'>
+      <image src='../../images/tag.png'></image>
+      <text>{{item.tagid}}</text>
+    </view>
+    <view class='tag'>
+      <image src='../../images/tag.png'></image>
+      <text>{{item.tid}}</text>
+    </view>
+    <button class='comment'>
+      <text>评论({{item.commcount}})</text>
+      <image src='../../images/comment.png'></image>
+    </button>
+    <button class='thumbs' bindtap='thumbsup' data-item="{{item}}" data-idx="{{index}}">
+      <text>点赞({{item.thumscount}})</text>
+      <image src='../../images/thumbs.png'></image>
+    </button>
+  </view>
+</view>
+

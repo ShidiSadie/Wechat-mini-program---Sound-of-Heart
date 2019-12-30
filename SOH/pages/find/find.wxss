@@ -1,0 +1,103 @@
+/* pages/find/find.wxss */
+.moment {
+  margin-top: 20rpx;
+}
+
+.momentbar {
+  margin-left: 300rpx;
+}
+
+.onemoment {
+  background-color: rgb(222, 244, 248);
+  width: 650rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  height: 300rpx;
+}
+
+.myhead {
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.onemoment image {
+  float: left;
+}
+
+.onemoment .info {
+  float: left;
+}
+
+.onemoment .name {
+  margin-top:10rpx;
+  margin-left: 20rpx;
+  clear: right;
+}
+
+.onemoment .time {
+  font-size: 0.8rem;
+  color: rgb(161, 172, 173);
+  margin-left: 20rpx;
+  clear: right;
+}
+
+.onemoment .content {
+  font-size: 0.8rem;
+  color: rgb(95, 103, 104);
+  clear: both;
+  margin-left: 130rpx;
+
+}
+
+
+.onemoment .tag image {
+  margin-top: 0.1rem;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.onemoment .tag {
+  font-size: 0.7rem;
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  float:right;
+  color: rgba(75, 74, 74, 0.342);
+}
+
+.onemoment .thumbs image {
+  margin-top: 0.3rem;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.onemoment .comment image {
+  margin-top: 0.3rem;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.onemoment .thumbs {
+  font-size: 0.7rem;
+  width:190rpx;
+  height: 60rpx;
+  margin-left: 15rpx;
+  background-color: rgb(235, 247, 243);
+  float: left;
+}
+
+.onemoment .comment {
+  font-size: 0.7rem;
+  width:190rpx;
+  height: 60rpx;
+  margin-left: 240rpx;
+  background-color: rgb(235, 247, 243);
+  float:left;
+}

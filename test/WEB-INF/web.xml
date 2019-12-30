@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  
+  <servlet>
+  	<servlet-name>WXServlet</servlet-name>
+  	<servlet-class>servlet.WXServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>WXServlet</servlet-name>
+  	<url-pattern>/WXServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>findServlet</servlet-name>
+  	<servlet-class>servlet.findServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>findServlet</servlet-name>
+  	<url-pattern>/findServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>tagServlet</servlet-name>
+  	<servlet-class>servlet.tagServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>tagServlet</servlet-name>
+  	<url-pattern>/tagServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>infoServlet</servlet-name>
+  	<servlet-class>servlet.infoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>infoServlet</servlet-name>
+  	<url-pattern>/infoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>quesServlet</servlet-name>
+  	<servlet-class>servlet.quesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>quesServlet</servlet-name>
+  	<url-pattern>/quesServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>settingServlet</servlet-name>
+  	<servlet-class>servlet.settingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>settingServlet</servlet-name>
+  	<url-pattern>/settingServlet</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+  	<servlet-name>uinfoServlet</servlet-name>
+  	<servlet-class>servlet.uinfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>uinfoServlet</servlet-name>
+  	<url-pattern>/uinfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>reportServlet</servlet-name>
+  	<servlet-class>servlet.reportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reportServlet</servlet-name>
+  	<url-pattern>/reportServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>publishServlet</servlet-name>
+  	<servlet-class>servlet.publishServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>publishServlet</servlet-name>
+  	<url-pattern>/publishServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

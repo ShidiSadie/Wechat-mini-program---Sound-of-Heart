@@ -1,0 +1,46 @@
+/* pages/fans/fans.wxss */
+.fans {
+  margin-top: 20rpx;
+}
+
+.fansbar {
+  margin-left: 300rpx;
+}
+
+.fansmoment {
+  background-color: rgb(222, 244, 248);
+  width: 650rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  height: 150rpx;
+}
+
+.myhead {
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.fansmoment image {
+  float: left;
+}
+
+.fansmoment .info {
+  float: left;
+}
+
+.fansmoment .name {
+  margin-top:10rpx;
+  margin-left: 20rpx;
+  clear: right;
+}
+
+.fansmoment .sig {
+  font-size: 0.8rem;
+  color: rgb(161, 172, 173);
+  margin-left: 20rpx;
+  clear: right;
+}

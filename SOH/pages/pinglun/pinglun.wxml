@@ -1,0 +1,13 @@
+<scroll-view  class='moment'>
+  <view class='onemoment' wx:for="{{objectArray}}" wx:for-item="item">
+    <image class="myhead" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class='info'>
+      <view class='name'>{{item.useid}}评论了</view>
+      <view class='time'>{{item.cdate}}</view>
+    </view>
+    <view class='content'>{{item.ccontent}}</view>
+    <view class='comment'>
+      <text>{{item.mcontent}}</text>
+    </view>
+  </view>
+</scroll-view>

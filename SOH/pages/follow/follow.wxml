@@ -1,0 +1,12 @@
+<!--pages/follow/follow.wxml-->
+<view class='follow'>
+  <text class='followbar'>我的关注</text>
+  <view class='followmoment' wx:for="{{objectArray}}" wx:for-inde="index" wx:for-item="item">
+    <image class="myhead" src="../../images/{{item.upic}}.jpg" mode="cover"></image>
+    <view class='info'>
+      <view class='name'>{{item.uname}}</view>
+      <view class='sig'>{{item.usig}}</view>
+    </view>
+  </view>
+</view>
+

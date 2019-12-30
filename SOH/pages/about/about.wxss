@@ -1,0 +1,18 @@
+/* pages/index/guanyu.wxss */
+.image-1{
+  margin-top: 90rpx;
+  margin-left: 130rpx;
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.text-01{
+  color: rgb(28, 191, 212);
+  font-size: 26rpx;
+  line-height: 1.2;
+}
+
+.view-1{
+  margin-left: 150rpx;
+  margin-right: 150rpx
+}

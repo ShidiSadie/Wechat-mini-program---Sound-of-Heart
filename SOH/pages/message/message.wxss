@@ -1,0 +1,6 @@
+/* pages/mine/mine.wxss */
+.dongtu image {
+  margin-top:270rpx;
+  margin-left: 350rpx;
+  clear: right;
+}

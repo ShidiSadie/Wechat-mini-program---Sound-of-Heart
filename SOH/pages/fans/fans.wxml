@@ -1,0 +1,12 @@
+<!--pages/fans/fans.wxml-->
+<view class='fans'>
+  <text class='fansbar'>我的粉丝</text>
+  <view class='fansmoment' wx:for="{{objectArray}}" wx:for-inde="index" wx:for-item="item">
+    <image class="myhead" src="../../images/{{item.upic}}.jpg" mode="cover"></image>
+    <view class='info'>
+      <view class='name'>{{item.uname}}</view>
+      <view class='sig'>{{item.usig}}</view>
+    </view>
+  </view>
+</view>
+
