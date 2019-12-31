@@ -1,0 +1,65 @@
+<!--pages/mine/mine.wxml-->
+<view class='head'>
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  <view class='introduce'>
+    <text class='name'>
+      {{userInfo.nickName}}
+    </text>
+    <text class='signature'>
+      {{info[0].sign}}
+    </text>
+  </view>
+</view>
+<view class='body'>
+  <button bindtap="gotoFans"> 
+    <image class='inner' src='../../images/fans.png'></image>
+    <text class='inner'>粉丝</text>
+  </button>
+  <button bindtap="gotoFollow"> 
+    <image class='inner' src='../../images/follow.png'></image>
+    <text class='inner'>关注</text> 
+  </button>
+  <button bindtap="gotoReport"> 
+    <image class='inner' src='../../images/report.png'></image>
+    <text class='inner'>周报</text> 
+  </button>
+  <button bindtap="changeItemInObject"> 
+    <image class='inner' src='../../images/deposit.png'></image>
+    <text class='inner'>充值</text> 
+  </button>
+  <button bindtap="gotoSetting"> 
+    <image class='inner' src='../../images/setting.png'></image>
+    <text class='inner'>设置</text> 
+  </button>
+  <button bindtap="gotoExpert"> 
+    <image class='inner' src='../../images/expert.png'></image>
+    <text class='inner'>专家</text> 
+  </button>
+</view>
+<view class='moment'>
+  <text class='mymoment'>我的动态</text>
+  <view class='onemoment' wx:for="{{objectArray}}" wx:for-item="item">
+    <image class="myhead" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class='info'>
+      <view class='name'>{{userInfo.nickName}}</view>
+      <view class='time'>{{item.mtime}}</view>
+    </view>
+    <view class='content'>{{item.mcontent}}</view>
+    <view class='tag'>
+      <image src='../../images/tag.png'></image>
+      <text>{{item.tagid}}</text>
+    </view>
+    <view class='tag'>
+      <image src='../../images/tag.png'></image>
+      <text>{{item.tid}}</text>
+    </view>
+    <button class='comment'>
+      <text>评论({{item.commcount}})</text>
+      <image src='../../images/comment.png'></image>
+    </button>
+    <button class='thumbs'>
+      <text>点赞({{item.thumscount}})</text>
+      <image src='../../images/thumbs.png'></image>
+    </button>
+  </view>
+</view>

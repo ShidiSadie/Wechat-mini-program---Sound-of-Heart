@@ -1,0 +1,14 @@
+<view class="item-list">
+  <view class="pro-item" wx:for="{{proList}}">
+    <image class="pro-logo" src="{{item.logo}}"></image>
+    <view class="pro-body">
+      <view class="pro-title">{{item.title}}</view>
+      <text class="pro-desc">{{item.desc}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+

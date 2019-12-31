@@ -1,0 +1,5 @@
+<!--pages/report/report.wxml-->
+<view class='report'>
+<image src="image/{{imageName.imageName}}" bindload="imageLoad"
+style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+</view>
