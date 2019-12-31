@@ -1,0 +1,40 @@
+<!--pages/publish/publish.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='text'>
+  <textarea placeholder="现在想说……" placeholder-style="color:#gray;font-size:0.8rem" name="saying"></textarea>
+</view>
+<text class='tagbar'>标签选择</text>
+<view class='buttons'>
+  <view wx:for="{{objectArray}}" wx:for-item="item" wx:for-index="index">
+    <button class="tag" bindtap='onTag' data-idx="{{index}}">
+      <image src='../../images/tag.png'></image>
+      <input class="item {{state[index]!=0?'active':''}}" value="{{item.tagname}}" name="nid" type="hidden" disabled="true"/>
+    </button>
+  </view>
+</view>
+
+<input  class="cid" type="hidden" disabled="true" name="topicid" value="{{tid}}"/>
+<input  class="tagid" type="hidden" disabled="true" name="tagid" value="{{tagid}}"/>
+
+<view class='gap'></view>
+<view class='send'>
+  <button class="b1" formType="submit"  plain="true" >发送</button>
+   <button class="b1" formType="reset"  plain="true" >清空</button>
+</view>
+
+</form>
+
+ <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>

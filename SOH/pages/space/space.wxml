@@ -1,0 +1,110 @@
+<!--pages/quest/ques.wxml-->
+<view class='page'>
+<view class="header">
+<text class="title">休闲问卷</text>
+<image  class="img1" src="/images/cat.jpg" ></image>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<input  class="send" type="hidden" disabled="true" name="topicid" value="tp04"/>
+<view class="chose">
+   <text class='c1'>1.你喜欢与他人一起去旅游、打游戏、听音乐吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q1">
+   <radio class="radios" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>2.你的休闲方式会选择哪种呢？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q2">
+   <radio class="radios" wx:for-items="{{items2}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>3.你对《哈姆莱特》中的男主角哈姆莱特怎么看待？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q3">
+   <radio class="radios" wx:for-items="{{items3}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>4.你喜欢的运动类型？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q4">
+   <radio class="radios" wx:for-items="{{items4}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>5.你的打游戏的频率是？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q5">
+   <radio class="radios" wx:for-items="{{items5}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>6.你喜欢的音乐类型？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q6">
+   <radio class="radios" wx:for-items="{{items6}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>7.你会向亲朋好友们推荐你喜欢的事物吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q7">
+   <radio class="radios" wx:for-items="{{items7}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>8.你会因为喜爱看的小说或电影、电视剧等熬夜吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q8">
+   <radio class="radios" wx:for-items="{{items8}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>9.现在你有放松的时间了，有三种选择供给，你会选择哪种？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q9">
+   <radio class="radios" wx:for-items="{{items9}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>10.如果只有以下三种饮品供给你选择，你会选择哪种？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q10">
+   <radio class="radios" wx:for-items="{{items10}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="btn">
+   <button class="b1" formType="submit" type="default" plain="true" >提交</button>
+   <button class="b1" formType="reset" type="default" plain="true" >清空</button>
+</view>
+
+</form>
+ 
+     <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>
+</view>

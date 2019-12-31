@@ -1,0 +1,105 @@
+<!--pages/question/question.wxml-->
+<!--pages/quest/ques.wxml-->
+<view class='page'>
+<view class="header">
+<text class="title">艺术问卷</text>
+<image  class="img1" src="/images/logo2.jpg" ></image>
+</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<input  class="send" type="hidden" disabled="true" name="topicid" value="tp03"/>
+<view class="chose">
+   <text class='c1'>1.你是以怎样的态度对待你喜欢的艺术领域？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q1">
+   <radio class="radios" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>2.你是如何看待自己的作品？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q2">
+   <radio class="radios" wx:for-items="{{items2}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>3.你在进行艺术创作的工作中对环境的要求是？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q3">
+   <radio class="radios" wx:for-items="{{items3}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>4.你喜欢和其他人一起完成艺术创作吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q4">
+   <radio class="radios" wx:for-items="{{items4}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>5.平时喜欢的音乐风格是？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q5">
+   <radio class="radios" wx:for-items="{{items5}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>6.进行艺术创作的时候会预先进行设计与计划吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q6">
+   <radio class="radios" wx:for-items="{{items6}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>7.如果进行团体创作，你更倾向于？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q7">
+   <radio class="radios" wx:for-items="{{items7}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>8.当你所喜欢和擅长的艺术领域内出现了表现方式、表现技术时，你会立即去了解吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q8">
+   <radio class="radios" wx:for-items="{{items8}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>9.会如何对待别人对自己作品、品味的否定评价？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q9">
+   <radio class="radios" wx:for-items="{{items9}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+
+<view class="btn">
+   <button class="b1" formType="submit" type="default" plain="true" >提交</button>
+   <button class="b1" formType="reset" type="default" plain="true" >清空</button>
+</view>
+
+</form>
+ 
+     <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>
+</view>

@@ -1,0 +1,117 @@
+<!--pages/quest/ques.wxml-->
+<view class='page'>
+<view class="header">
+<image  class="img1" src="/images/logo5.jpg" ></image>
+<text class="title">生活问卷</text>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<input  class="send" type="text" disabled="true" name="topicid" value="tp05"/>
+<view class="chose">
+   <text class='c1'>1.你平时喜欢系腰带吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q1">
+   <radio class="radios" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}">
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+
+<view class="chose">
+   <text class='c1'>2.夏天的时候，你会很喜欢戴太阳镜吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q2">
+   <radio class="radios" wx:for-items="{{items3}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>3.你能准确地说出一线的时尚名牌来自于哪个国家、主打什么产品、还有什么附属产品吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q3">
+   <radio class="radios" wx:for-items="{{items4}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>4.你的衣橱里有几件格子衬衣？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q4">
+   <radio class="radios" wx:for-items="{{items5}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>5.你获知时尚资讯的途径大部分来源于？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q5">
+   <radio class="radios" wx:for-items="{{items6}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>6.恋爱的时候，你喜欢跟对方报告自己的一举一动吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" 
+   name="q6">
+   <radio class="radios" wx:for-items="{{items7}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>7.一般多久运动一次？</text>
+   <radio-group class="radio-group" bindchange="radioChange" 
+   name="q7">
+   <radio class="radios" wx:for-items="{{items8}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>8.一般会参加什么类型的运动活动？</text>
+   <radio-group class="radio-group" bindchange="radioChange" 
+   name="q8">
+   <radio class="radios" wx:for-items="{{items9}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>9.你会想和哪一种异性约会？</text>
+   <radio-group class="radio-group" bindchange="radioChange" 
+   name="q9">
+   <radio class="radios" wx:for-items="{{items10}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>10.你是一个生活在幻想中的人吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" 
+   name="q10">
+   <radio class="radios" wx:for-items="{{items11}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="btn">
+   <button class="b1" formType="submit" type="default" plain="true" >提交</button>
+   <button class="b1" formType="reset" type="default" plain="true" >清空</button>
+</view>
+</view>
+</form>
+ 
+     <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>
+</view>
