@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo" wx:for="{{objectArray}}" wx:for-item="item">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="firstline">
+      <image  class="img1" src="/images/name.jpg" ></image>
+      <text class="wchar1">昵称:</text>
+      <text class="name">{{userInfo.nickName}}</text>
+      </view>
+      </block>
+   <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="secondline">
+      <image  class="img2" src="/images/birth.jpg" ></image>
+      <text class="wchar2">生日:</text>
+        <picker mode="date" value="{{date}}" start="1990-09-01"          end="2010-09-01" bindchange="bindDateChange">  
+          <view class='birth'>
+           <input type="hidden" disabled="true" name="birth" value="{{item.birth}}"/>   
+          </view>   
+        </picker>
+     </view>
+     <view class="thirdline">
+        <image  class="img3" src="/images/sign.jpg" ></image>
+        <text class="wchar3">签名:</text>
+        <input class="sign"  name="sign"  maxlength="15" bindinput="bindKeyInput" placeholder="请输入少于15个字符" value="{{item.sign}}"/>
+      </view> 
+   
+
+  <text class="wchar4">个人状态：是否对外显示</text>
+  <view class="userprivacy">
+   <radio-group class="radio-group" name="status" bindchange="radioChange">
+   <radio class="radios" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+  </view>
+    <view class="btn">
+   <button class="b1" type="default" plain="true" formType="submit" >确认修改</button>
+   <button class="b2" type="default" formType="submit" formType="reset" plain="true">取消修改</button>
+   </view>
+  </form>
+</view>
+  
+   
+   <view class="btn">
+   <button class="b3" bindTap="gotoAbout">关于我们</button>
+  </view>   
+       <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view> 
+</view>
