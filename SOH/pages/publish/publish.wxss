@@ -1,0 +1,73 @@
+/* pages/publish/publish.wxss */
+.text {
+  border-bottom: 1px solid rgb(187, 187, 187)
+}
+textarea {
+  margin: 20rpx;
+  font-size: 0.8rem;
+  color: gray;
+  width: 600rpx;
+  margin-left: 70rpx;
+}
+
+.tagbar {
+  margin-left: 320rpx;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.buttons {
+  margin:20rpx;
+}
+
+.tag image {
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.tag input {
+  width: 100rpx;
+}
+
+/* .item {
+  color: gray;
+} */
+.active {
+  color:#65eef0;
+}
+
+.not {
+  color: gray;
+}
+
+.tag {
+  font-size: 0.7rem;
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  float:left;
+  color: rgba(75, 74, 74, 0.342);
+}
+
+.gap {
+  height: 30rpx;
+  clear: both;
+}
+
+.send button{
+  width: 500rpx;
+  margin-top:20rpx;
+  margin-left: 130rpx;
+}
+
+.cid{
+  color:#fff;
+  font-size:0rpx;
+}
+.tagid{
+  color:#fff;
+  size:0px;
+}

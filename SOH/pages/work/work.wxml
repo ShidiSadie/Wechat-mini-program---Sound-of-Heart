@@ -1,0 +1,113 @@
+<!--pages/quests/quests.wxml-->
+<!--pages/quest/ques.wxml-->
+<view class='page'>
+<view class="header">
+<text class="title">工作问卷</text>
+<image  class="img1" src="/images/logo2.jpg" ></image>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<input  class="send" type="hidden" disabled="true" name="topicid" value="tp03"/>
+<view class="chose">
+   <text class='c1'>1.你今天在工作上有什么值得惊喜的成就吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q1">
+   <radio class="radios" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>2.你会选择怎样的方向去努力？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q2"> 
+   <radio class="radios" wx:for-items="{{items2}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>3.当你发现工作出现了问题，但修改时间很紧张时，你会？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q3">
+   <radio class="radios" wx:for-items="{{items3}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>4.你会帮助其他人完成工作吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q4">
+   <radio class="radios" wx:for-items="{{items4}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>5.你会在怎样的情况下帮助他人？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q5">
+   <radio class="radios" wx:for-items="{{items5}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>6.你在工作计划讨论中一般会作出怎样的发言？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q6">
+   <radio class="radios" wx:for-items="{{items6}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>7.你大多会承担怎样的工作？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q7">
+   <radio class="radios" wx:for-items="{{items7}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>8.你的人际关系怎么样？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q8">
+   <radio class="radios" wx:for-items="{{items8}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>9.你是怎样看待工作事务的？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q9">
+   <radio class="radios" wx:for-items="{{items9}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="chose">
+   <text class='c1'>10.你想做工作中的领导人吗？</text>
+   <radio-group class="radio-group" bindchange="radioChange" name="q10">
+   <radio class="radios" wx:for-items="{{items10}}" wx:key="name" value="{{item.name}}" >
+   <text>{{item.value}}</text>
+    </radio>
+    </radio-group>
+</view>
+<view class="btn">
+   <button class="b1" formType="submit" type="default" plain="true" >提交</button>
+   <button class="b1" formType="reset" type="default" plain="true" >清空</button>
+</view>
+
+</form>
+ 
+     <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>
+</view>
+
+
